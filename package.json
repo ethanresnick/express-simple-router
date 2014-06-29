@@ -1,0 +1,25 @@
+{
+  "name": "express-simple-router",
+  "description": "Connects routes, from an object, to controller methods",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ethanresnick/express-simple-router",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ethanresnick/express-simple-router.git"
+  },
+  "author": "Ethan Resnick <ethan.resnick@gmail.com>",
+  "main": "index.js",
+  "dependencies": {
+    "express": "4.x.x",
+    "path-to-regexp": "^0.2.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.20.0",
+    "chai": "~1.9.0",
+    "sinon-chai": "2.5.x",
+    "sinon": "1.10.2"
+  },
+  "scripts": {
+    "test": "mocha test/simple-router.js"
+  }
+}
