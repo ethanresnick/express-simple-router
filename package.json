@@ -1,7 +1,7 @@
 {
   "name": "express-simple-router",
   "description": "Connects routes, from an object, to controller methods",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/ethanresnick/express-simple-router",
   "repository": {
     "type": "git",
