@@ -1,4 +1,4 @@
-This module can be used as an Express 4 middleware to augment the built-in router. It supports named routes and offers a helper function for getting the url for a named route, which is very useful for templating. It allows you to define a set of handlers (controllers) to a set of routes in a more convential, MVC-style format.
+This module offers an Express 4 middleware that augments the built-in router. It supports named routes and offers a helper function for getting the url for a named route, which is very useful for templating. It allows you to define a set of handlers (controllers) to a set of routes in a more convential, MVC-style format.
 
 # Usage
 ```javascript
