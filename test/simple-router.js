@@ -60,8 +60,8 @@ describe("the module", function() {
         expect(simpleRouter).to.be.a('function');
     });
 
-    it('should have an arity of two', function() {
-        expect(simpleRouter.length).to.equal(2);
+    it('should have an arity of three', function() {
+        expect(simpleRouter.length).to.equal(3);
     });
 
     it('should return an object with proper keys when invoked', function() {
