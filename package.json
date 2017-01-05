@@ -11,14 +11,14 @@
   "main": "index.js",
   "dependencies": {
     "express": "4.x.x",
-    "path-to-regexp": "^0.2.1",
-    "q": "1.1.x"
+    "path-to-regexp": "^1.7.0"
   },
   "devDependencies": {
-    "mocha": "~1.20.0",
-    "chai": "~1.9.0",
-    "sinon-chai": "2.5.x",
-    "sinon": "1.10.2"
+    "chai": "~3.5.0",
+    "mocha": "~3.2.0",
+    "sinon": "1.17.7",
+    "sinon-chai": "~2.8.0",
+    "supertest": "^2.0.1"
   },
   "scripts": {
     "test": "mocha test/simple-router.js"
