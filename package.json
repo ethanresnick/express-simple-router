@@ -11,8 +11,7 @@
   "main": "index.js",
   "dependencies": {
     "express": "4.x.x",
-    "path-to-regexp": "^1.7.0",
-    "q": "~1.4.1"
+    "path-to-regexp": "^1.7.0"
   },
   "devDependencies": {
     "mocha": "~3.2.0",
