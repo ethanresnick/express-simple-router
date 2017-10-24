@@ -18,6 +18,7 @@ var routes = {
         {path: '/noNamePost', handler: 'Test.post', method: 'post'},
         {path: '/index', handler: 'Test.secondIndex'},
         {path: '/testThis', handler: 'Test.thisVal'},
+        {path: '/methodHandler', handler: function() {}},
         {path: '/willRespond', handler: 'Test.respond', method: 'get'},
 
         // we're gonna test that this isn't called, after Test.respond responds.
@@ -32,14 +33,8 @@ var routes = {
         {path:'/test', handler:'Test.index', method:'invalid'},
         {path: '/noNameNoMethod', handler: 'Test.index'}
     ],
-    invalidHandler: [
-        {path: '/test', handler: function() {}}
-    ],
     missingHandler: [
         {path: '/test'}
-    ],
-    invalidPath: [
-        {path: 'bob', handler: function() {}}
     ]
 };
 
@@ -207,21 +202,11 @@ describe("handle()", function() {
             simpleRouter(routes.invalidMethod, hosts.valid).handle(controllers);
         };
 
-        var invalidHandler = function() {
-            simpleRouter(routes.invalidHandler, hosts.valid).handle(controllers);
-        };
-
         var noHandler = function() {
             simpleRouter(routes.missingHandler, hosts.valid).handle(controllers);
         };
 
-        var invalidPath = function() {
-            simpleRouter(routes.invalidPath, hosts.valid).handle(controllers);
-        }
-
         expect(invalidHTTPMethod).to.throw(Error);
-        expect(invalidHandler).to.throw(Error);
         expect(noHandler).to.throw(Error);
-        expect(invalidPath).to.throw(Error);
     });
 });
